@@ -32,7 +32,7 @@ For each time step t:
 ```
 
 ## Example Code
-Provide example code for importing and using the module.
+![Alt text](exapmle.png)
 
 ## Visualization or Animation
 ![Alt text](rew1.png)
