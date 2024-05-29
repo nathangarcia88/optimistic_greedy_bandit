@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/c/Users/19258/optimistic_greedy_bandit/.vscode",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black"
+}
