@@ -41,10 +41,12 @@ For each time step t:
 ## Visualization or Animation
 ![Alt text](opt1.png)
 ![Alt text](opt2.png)
+![Alt text](opt3.png)
 
 ## Benchmark Results
 ![Alt text](rew1.png)
 ![Alt text](rew2.png)
+![Alt text](rew3.png)
 
 ## Lessons Learned
 I learned a lot about what parameters I would want to make avaliable given that we are exporting a module for people to use. I would have been less bogged down in the weeds with alpha values and I would focused on trying to allow the user to make bigger changes such as episilon values, number of steps, number of runs, more specificity in creating the dataset, etc. Since there are so many tuneable parameters, I likely would have picked different focus groups. For example, make one that focuses on computation complexity, aplha/qinits/episilons, etc. Another thing I would likely add to the framework is the ability to hypertune more effectively. It is hard to plug and play our parameters. Instead, I would introduce a latin hypercube sampling algorithm to determine the best parameters for a given problem.
