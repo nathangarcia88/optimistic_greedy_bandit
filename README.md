@@ -64,6 +64,9 @@ Essentially, make sure all of our key functions work as they should.
 ## Code-Coverage Measurement
 
 I installed the code-coverage so every result should provide unit test results.
+
 coverage run -m unittest discover tests
+
 coverage report
+
 coverage html
