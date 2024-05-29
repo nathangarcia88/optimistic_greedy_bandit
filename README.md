@@ -35,8 +35,12 @@ For each time step t:
     Update the Q-value for the action using the reward
 ```
 
+The psuedo code is essentially the same as the simple epsilon greedy bandit except for the key difference in qinitial for all actions. This qinitial value determines how long the algorithm will be uber greedy in the beginning.
+
 ## Example Code
 ![Alt text](example.png)
+
+In this instance, you can change the size of the testbed, alpha value, qinitial, qstar, number of steps per run and number of reps per run when you input the optimistic_greedy function from opt_greedy_bandit_code. A key thing to note is that there are many different parameters so it is important to have a plan of which parameters we want to tune. Most of the time we will likely want to tune q-initial because that is the knob that allows to be explore more or less. The number of steps per run and number of reps per run highly impact the accuracy/smoothness of the experiment. But it will also add to the computational complexity. A good rule of thumb is to tune with smaller numbers then for final solutions add more steps and reps for a more accurate result. 
 
 ## Visualization or Animation
 ![Alt text](opt1.png)
