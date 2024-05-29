@@ -46,10 +46,17 @@ Provide example code for importing and using the module.
 Present benchmark results comparing efficiency and effectiveness.
 
 ## Lessons Learned
-Share any lessons learned, including new code snippets.
+I learned a lot about what parameters I would want to make avaliable given that we are exporting a module for people to use. I would have been less bogged down in the weeds with alpha values and I would focused on trying to allow the user to make bigger changes such as episilon values, number of steps, number of runs, more specificity in creating the dataset, etc. Since there are so many tuneable parameters, I likely would have picked different focus groups. For example, make one that focuses on computation complexity, aplha/qinits/episilons, etc. Another thing I would likely add to the framework is the ability to hypertune more effectively. It is hard to plug and play our parameters. Instead, I would introduce a latin hypercube sampling algorithm to determine the best parameters for a given problem.
 
 ## Unit-Testing Strategy
-Explain the unit-testing strategy and what steps of the algorithm were tested.
+- test_getTestbed: Ensures the correct number of bandit arms are generated.
+- test_simpleBandit: Verifies the function runs correctly and returns arrays of the expected length.
+- test_alpha: Checks the correctness of the step size calculation.
+- test_getAction: Validates the action selection process using epsilon-greedy strategy.
+- test_getReward: Ensures the reward function returns a float value.
+- test_updateQconstep: Verifies the Q-value update process using a constant step size.
+
+Essentially, make sure all of our key functions work as they should.
 
 ## Code-Coverage Measurement
 Include code-coverage measurement results.
