@@ -15,7 +15,11 @@ The Optimistic Greedy Bandit algorithm is designed to solve the multi-armed band
 The k-armed bandit problem is a classic reinforcement learning problem where an agent must choose between k different actions (or arms) to maximize its reward. Each arm provides a stochastic reward based on an unknown probability distribution. The challenge is to balance exploration (trying new arms) with exploitation (choosing the best-known arm). Essentially, there is an unknown distribution for each arm and the bandit attempts to get familiar enough with the arms to eventually choose the optimal arm to get the most rewards. This directly relates to our projects of finding the best strategy for slot machines.
 
 ## History
-The bandit problem has been studied extensively in statistics, economics, and computer science. It is named after slot machines (one-armed bandits) in casinos. The optimistic initial values approach encourages exploration by initially overestimating the value of all actions.
+The multi-armed bandit problem started to be investigated in the early 1900s. It is named after slot machines, also known as one-armed bandits, in casinos. This was the inspiration for our project. The problem involves making a sequence of decisions to choose between multiple options (bandit arms) with unknown reward distributions. The goal is to maximize the total reward over time.
+
+The optimistic initial values approach encourages exploration by initially overestimating the value of all actions. This strategy helps the algorithm to gather more information about the different options, potentially leading to better long-term rewards. This is an add on of the simple bandit. Will get a better solution in the long run, more exploration in the beginning.
+
+In recent years, companies like Amazon have applied multi-armed bandit algorithms to various aspects of their business. For example, Amazon uses these algorithms to optimize product recommendations, dynamically adjust prices, and improve user experiences by personalizing content. By leveraging the exploration-exploitation trade-off, Amazon can continuously learn and adapt to customer preferences, ultimately enhancing their overall satisfaction and increasing sales.
 
 ## Variations
 - **Simple Bandit:** A simpler version without optimistic initial values.
