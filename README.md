@@ -46,7 +46,7 @@ In this instance, you can change the size of the testbed, alpha value, qinitial,
 Below, we will look into performance of the optimal actions for 3 different datasets.One thing to keep in mind is that since they are three datasets, the comparison is not exactly apples to apples but there are some trends we can analyze.
 ![Alt text](opt2.png)
 
-This is the optimality of dataset 1. We completed 1000 steps and 1000 reps per test. We notice throughout the whole figure that there is a constant rise in all of the optimal decisions for each epsilon value
+This is the optimality of dataset 1. We completed 1000 steps and 1000 reps per test. We notice throughout the whole figure that there is a constant rise in all of the optimal decisions for each epsilon value. This is likely because 
 
 
 ![Alt text](opt3.png)
