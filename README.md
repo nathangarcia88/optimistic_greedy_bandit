@@ -43,14 +43,17 @@ The psuedo code is essentially the same as the simple epsilon greedy bandit exce
 In this instance, you can change the size of the testbed, alpha value, qinitial, qstar, number of steps per run and number of reps per run when you input the optimistic_greedy function from opt_greedy_bandit_code. A key thing to note is that there are many different parameters so it is important to have a plan of which parameters we want to tune. Most of the time we will likely want to tune q-initial because that is the knob that allows to be explore more or less. The number of steps per run and number of reps per run highly impact the accuracy/smoothness of the experiment. But it will also add to the computational complexity. A good rule of thumb is to tune with smaller numbers then for final solutions add more steps and reps for a more accurate result. 
 
 ## Visualization or Animation
-![Alt text](opt1.png)
+Below, we will look into performance of the optimal actions for 3 different datasets.One thing to keep in mind is that since they are three datasets, the comparison is not exactly apples to apples but there are some trends we can analyze.
 ![Alt text](opt2.png)
+
+This is the optimality of dataset 1. 
 ![Alt text](opt3.png)
+![Alt text](opt1.png)
 
 ## Benchmark Results
-![Alt text](rew1.png)
 ![Alt text](rew2.png)
 ![Alt text](rew3.png)
+![Alt text](rew1.png)
 
 ## Lessons Learned
 I learned a lot about what parameters I would want to make avaliable given that we are exporting a module for people to use. I would have been less bogged down in the weeds with alpha values and I would focused on trying to allow the user to make bigger changes such as episilon values, number of steps, number of runs, more specificity in creating the dataset, etc. Since there are so many tuneable parameters, I likely would have picked different focus groups. For example, make one that focuses on computation complexity, aplha/qinits/episilons, etc. Another thing I would likely add to the framework is the ability to hypertune more effectively. It is hard to plug and play our parameters. Instead, I would introduce a latin hypercube sampling algorithm to determine the best parameters for a given problem.
