@@ -32,7 +32,7 @@ For each time step t:
 ```
 
 ## Example Code
-![Alt text](exapmle.png)
+![Alt text](example.png)
 
 ## Visualization or Animation
 ![Alt text](rew1.png)
