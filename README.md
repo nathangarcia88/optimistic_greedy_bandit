@@ -51,8 +51,10 @@ This is the optimality of dataset 1. We completed 1000 steps and 1000 reps per t
 
 ![Alt text](opt3.png)
 
-Similar story to the episode above, we made 
+Similar story to the episode above, we made the qinitial very high so there was a lot of exploring in the beginning and then it started to get more greedy. In both we notice that epsilon values greater than 0.2 prove to be unproductive.
 ![Alt text](opt1.png)
+
+Lastly, this is a smaller dataset so we were initially less explorative. Additionally, this is a great example of how a larger epsilon value can be allow for good exploration in the beggining but it can be negative when it essentially serves as a cap to how successful the algoirthm can be when it is time to exploit. 
 
 ## Benchmark Results
 ![Alt text](rew2.png)
