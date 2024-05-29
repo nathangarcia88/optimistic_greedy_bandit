@@ -37,7 +37,10 @@ For each time step t:
 Provide example code for importing and using the module.
 
 ## Visualization or Animation
-
+![Alt text](rew1.png)
+![Alt text](opt1.png)
+![Alt text](rew2.png)
+![Alt text](opt2.png)
 
 ## Benchmark Results
 Present benchmark results comparing efficiency and effectiveness.
