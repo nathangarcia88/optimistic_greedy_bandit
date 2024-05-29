@@ -29,8 +29,7 @@ For each time step t:
     With probability eps, choose a random action
     Take the action, observe reward r
     Update the Q-value for the action using the reward
-
-
+```
 
 # Bandit A
 
