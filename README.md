@@ -31,8 +31,6 @@ For each time step t:
     Update the Q-value for the action using the reward
 ```
 
-# Bandit A
-
 ## Example Code
 Provide example code for importing and using the module.
 
@@ -59,4 +57,6 @@ I learned a lot about what parameters I would want to make avaliable given that 
 Essentially, make sure all of our key functions work as they should.
 
 ## Code-Coverage Measurement
-Include code-coverage measurement results.
+
+I installed the code-coverage so every result should provide unit test results.
+
