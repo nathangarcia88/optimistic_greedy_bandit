@@ -61,6 +61,8 @@ Lastly, this is a smaller dataset so we were initially less explorative. Additio
 ![Alt text](rew3.png)
 ![Alt text](rew1.png)
 
+Key things to note of our benchmark results is when the bandits level offf and become fully greedy. For the higher q-initial values it takes longer for this to happen. Also, in the last image, we can see that the larger epsilon values are not effective. A good fix to this would be for the epsilon value to decrease as the steps increase. Be more explorative in the beginning then start to shift to more exploitative towards the end. 
+
 ## Lessons Learned
 I learned a lot about what parameters I would want to make avaliable given that we are exporting a module for people to use. I would have been less bogged down in the weeds with alpha values and I would focused on trying to allow the user to make bigger changes such as episilon values, number of steps, number of runs, more specificity in creating the dataset, etc. Since there are so many tuneable parameters, I likely would have picked different focus groups. For example, make one that focuses on computation complexity, aplha/qinits/episilons, etc. Another thing I would likely add to the framework is the ability to hypertune more effectively. It is hard to plug and play our parameters. Instead, I would introduce a latin hypercube sampling algorithm to determine the best parameters for a given problem.
 
